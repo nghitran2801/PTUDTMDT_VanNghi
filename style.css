@@ -2,17 +2,17 @@
 
 :root {
     color-scheme: dark;
-    --night: #100b20;
-    --space: #24133f;
-    --violet: #8054c7;
-    --electric-violet: #9b6dff;
-    --lavender: #b99af5;
-    --stardust: #e5d8ff;
-    --moonlight: #faf7ff;
-    --muted: #bbb0cf;
-    --glass: rgba(32, 22, 53, 0.62);
-    --glass-strong: rgba(31, 21, 54, 0.84);
-    --edge: rgba(229, 216, 255, 0.15);
+    --night: #130d25;
+    --space: #2b1850;
+    --violet: #9461ec;
+    --electric-violet: #b58aff;
+    --lavender: #d0b2ff;
+    --stardust: #f0e8ff;
+    --moonlight: #ffffff;
+    --muted: #d2c8e5;
+    --glass: rgba(39, 27, 64, 0.68);
+    --glass-strong: rgba(38, 26, 65, 0.88);
+    --edge: rgba(240, 232, 255, 0.2);
     --sans: 'DM Sans', 'Segoe UI', sans-serif;
     --display: 'Manrope', 'Segoe UI', sans-serif;
     --pointer-x: 50vw;
@@ -1083,3 +1083,26 @@ button { font: inherit; }
         animation: none !important;
     }
 }
+
+.navigation__link { font-size: 12px; }
+.eyebrow { font-size: 11px; }
+.card-index { font-size: 10px; }
+.button, .text-link, .back-link { font-size: 13px; }
+.home-specialty { font-size: 10px; }
+.home-intro, .page-heading__lead, .section-lead, .personal-story p,
+.case-study-card p, .responsibility-card p, .education-focus-card p,
+.education-summary p, .project-card__body p, .detail-hero__copy > p:last-child {
+    font-size: 15px;
+}
+.contact-link small { font-size: 10px; }
+.contact-link strong { font-size: 14px; }
+.contact-fields span { color: var(--muted); font-size: 13px; }
+.contact-fields strong, .contact-fields a {
+    color: var(--stardust);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    text-decoration-color: var(--lavender);
+}
+.contact-fields a { overflow-wrap: anywhere; }
+.contact-card > p { font-size: 14px; }

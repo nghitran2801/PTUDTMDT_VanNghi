@@ -1,5 +1,7 @@
 const profile = {
     name: 'Trần Ngọc Vân Nghi',
+    email: 'nghitran2801@gmail.com',
+    facebook: 'Vân Nghi',
     study: 'Thương mại điện tử',
     school: 'Đại học Kinh tế TP. Hồ Chí Minh (UEH)',
     status: 'Đang học',
@@ -349,18 +351,16 @@ function homePage() {
                 <p class="section-lead">Mình luôn sẵn sàng kết nối về Customer Experience, giải pháp CSKH và thương mại điện tử.</p>
             </div>
             <div class="contact-links">
-                <a class="contact-link glass-card" href="mailto:your.email@example.com" data-reveal>
+                <a class="contact-link glass-card" href="mailto:${profile.email}" data-reveal>
                     <span class="contact-link__icon" aria-hidden="true">✉</span>
-                    <span><small>EMAIL</small><strong>your.email@example.com</strong></span>
+                    <span><small>EMAIL</small><strong>${profile.email}</strong></span>
                     ${arrowIcon()}
                 </a>
-                <a class="contact-link glass-card" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener noreferrer" data-reveal>
-                    <span class="contact-link__icon" aria-hidden="true">in</span>
-                    <span><small>LINKEDIN</small><strong>linkedin.com/in/your-profile</strong></span>
-                    ${arrowIcon()}
-                </a>
+                <div class="contact-link glass-card" data-reveal>
+                    <span class="contact-link__icon" aria-hidden="true">f</span>
+                    <span><small>FACEBOOK</small><strong>${profile.facebook}</strong></span>
+                </div>
             </div>
-            <p class="contact-placeholder-note">Hãy thay email và đường dẫn LinkedIn mẫu bằng thông tin liên hệ của bạn.</p>
         </section>`;
 }
 
@@ -533,19 +533,17 @@ function educationPage() {
 function contactPage() {
     return `
         <section class="page-shell page-shell--contact">
-            ${pageHeading('07', 'CONTACT', 'Mở một cánh cổng<br><em>để kết nối.</em>', 'Email, LinkedIn và số điện thoại sẽ xuất hiện khi bạn bổ sung thông tin muốn công khai.')}
+            ${pageHeading('07', 'CONTACT', 'Mở một cánh cổng<br><em>để kết nối.</em>', 'Liên hệ với mình qua email hoặc Facebook.')}
             <div class="contact-gate" data-reveal>
                 <div class="contact-gate__halo" aria-hidden="true"><span></span><i></i><b></b></div>
                 <div class="contact-card glass-card">
-                    <span class="card-index">YOUR NEXT STEP</span>
-                    <h2>Let’s connect<br><em>when you’re ready.</em></h2>
-                    <p>Chưa có thông tin liên hệ được xác nhận để hiển thị.</p>
+                    <span class="card-index">CONTACT</span>
+                    <h2>Let’s connect<br><em>and create value.</em></h2>
+                    <p>Mình luôn sẵn sàng kết nối và trao đổi.</p>
                     <div class="contact-fields">
-                        <div><span>Email</span><strong>[Bổ sung email]</strong></div>
-                        <div><span>LinkedIn</span><strong>[Bổ sung liên kết]</strong></div>
-                        <div><span>Điện thoại</span><strong>[Bổ sung số điện thoại nếu muốn công khai]</strong></div>
+                        <div><span>Email</span><a href="mailto:${profile.email}">${profile.email}</a></div>
+                        <div><span>Facebook</span><strong>${profile.facebook}</strong></div>
                     </div>
-                    <small>Form liên hệ chưa được bật vì website chưa kết nối dịch vụ gửi form.</small>
                 </div>
             </div>
         </section>`;
